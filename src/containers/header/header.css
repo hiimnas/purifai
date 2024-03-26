@@ -1,0 +1,190 @@
+@media screen and (max-width: 1100px) {
+    .header-content p {
+        font-size: large !important;
+        line-height: 24px !important;
+    }
+
+    .testimonials img {
+        width: 24% !important;
+    }
+
+    .testimonials span {
+        margin: 0 !important;
+        font-size: medium !important;
+    }
+
+    .mailing-list {
+        margin: 0 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    #email {
+        font-size: large !important;
+    }
+
+    .mailing-list button {
+        font-size: large !important;
+    }
+
+    .header-image img {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .header {
+        flex-direction: column !important;
+    }
+
+    .header-content h1 {
+        font-size: 36px !important;
+    }
+
+    .header-content p {
+        font-size: medium !important;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonials span {
+        margin: 0 !important;
+        font-size: small !important;
+    }
+
+    .mailing-list {
+        margin: 0 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    #email {
+        font-size: medium !important;
+    }
+
+    .mailing-list button {
+        font-size: medium !important;
+    }
+
+    .header-image {
+        justify-content: center !important;
+    }
+
+    .header-image img {
+        width: 66% !important;
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .mailing-list button {
+        max-width: 75px;
+        padding: 2%;
+    }
+}
+
+
+.header {
+    display: flex;
+    padding: 2% 6%;
+    max-width: 100% !important;
+}
+
+.header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font-family);
+}
+
+.header-content h1 {
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    font-size: 48px;
+}
+
+.header-content h1 b {
+    font-weight: 600;
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-content p {
+    font-size: larger;
+    line-height: 27px;
+    color: var(--bs-light);
+    margin-top: 1.5rem;
+}
+
+.mailing-list {
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+}
+
+#email {
+    flex: 2;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-size: larger;
+    line-height: 27px;
+    background-color: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    border-radius: 5ps 0px 0px 5px;
+    color: white;
+}
+
+#email::placeholder {
+    color: var(--bs-light);
+    opacity: 0.8;
+}
+
+.header-content button {
+    font-family: var(--font-family);
+    font-size: larger;
+    line-height: 27px;
+    transition: color 0.6s;
+}
+
+.header-content button:hover {
+    color: var(--bs-light);
+}
+
+.testimonials {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.5%;
+}
+
+.testimonials img {
+    width: 12%;
+}
+
+.testimonials span {
+    margin-left: 1rem;
+    font-size: medium;
+    color: white;
+}
+
+.header-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.testimonials img:hover {
+    cursor: pointer;
+}
+
+.header-image img {
+    width: 66%;
+}
+

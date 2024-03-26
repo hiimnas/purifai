@@ -1,0 +1,42 @@
+.feature {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.title {
+    flex: 1;
+    max-width: fit-content;
+}
+
+.title h1 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: larger;
+    line-height: 32px;
+    letter-spacing: -0.04em;
+    color: white;
+}
+
+.title h1::before {
+    content: "";
+    position: absolute;
+    width: 36px; 
+    height: 3px;
+    background: var(--gradient-bar); 
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.feature-text {
+    flex: 2;
+    display: flex;
+}
+
+.feature-text p {
+    font-family: var(--font-family);
+    font-size: large;
+    color: var(--bs-light);
+}

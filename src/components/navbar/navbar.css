@@ -1,0 +1,140 @@
+@media screen and (max-width: 1080px) {
+    .navbar-menu {
+        display: flex !important;
+    }
+    .nav-menu .login {
+        display: none;
+    }
+
+    .nav-links {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar .login {
+        display: none;
+    }
+
+    .nav-menu .login {
+        display: flex;
+        margin: 0;
+    }
+
+    .nav-menu {
+        padding: 1rem !important;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 3%;
+    max-height: fit-content;
+}
+
+.navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 2%;
+    transition: opacity 1s;
+}
+
+.logo:hover {
+    opacity: 0.82;
+}
+
+.logo img {
+    height: 52px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links li,
+.nav-sign li,
+.nav-menu li {
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: large;
+    margin: 0 1rem;
+    line-height: 100%;
+    text-wrap: nowrap;
+}
+
+.nav-links a {
+    transition: opacity 0.6s;
+}
+
+.nav-links a:hover {
+    opacity: 0.66;
+}
+
+.login {
+    margin: auto 3%;
+}
+
+.login button {
+    padding: 0.5rem 0.5rem;
+    font-family: var(--font-family);
+    font-size: large;
+    line-height: 100%;
+    margin: 0 !important;
+    transition: all 0.6s;
+}
+
+.navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background-color: var(--color-footer);
+    padding: 1rem 1rem 0;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+}
+
+.nav-menu-links {
+    list-style-type: none;
+}
+
+.nav-menu-links li {
+    margin: 6px 0;
+    transition: opacity 1s;
+}
+
+.nav-menu-links li:hover {
+    opacity: 0.66;
+}

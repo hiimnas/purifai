@@ -1,0 +1,28 @@
+.brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem auto;
+    border-bottom: 1px solid var(--bs-gray);
+}
+
+.brands a {
+    flex: 1;
+    max-width: max-content;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands a img {
+    padding: 6px 0;
+    border-bottom: 3px solid transparent;
+    opacity: 0.7;
+    transition: opacity 0.6s;
+}
+
+.brands a img:hover {
+    opacity: 1;
+}

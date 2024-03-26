@@ -1,0 +1,119 @@
+@media screen and (max-width: 1100px) {
+    .focus .card-subtitle {
+        font-size: small;
+        line-height: 26px;
+    }
+    
+    .focus .card-text {
+        font-size: larger;
+    }
+    
+    .focus .card-body a {
+        font-size: medium;
+    }
+
+    .other .card-subtitle {
+        font-size: x-small !important;
+        line-height: 20px !important;
+    }
+    
+    .other .card-text {
+        font-size: small !important;
+    }
+    
+    .other .card-body a {
+        font-size: smaller !important;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .blog-container {
+        flex-direction: column !important;
+        justify-content: space-evenly;
+    }
+
+    .focus {
+        margin: 2rem 0 !important;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .blog {
+        padding: 3vw 3vw 3vw 6vw !important;
+        justify-content: center !important;
+    }
+    .other {
+        grid-gap: 5vw !important;
+    }
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-heading {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.blog-heading h1 {
+    font-family: var(--font-family);
+    letter-spacing: -0.04em;
+}
+
+.blog-heading h1 b {
+    font-weight: 500;
+    background-color: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.focus {
+    flex: 0.75;
+    margin-right: 2rem;
+}
+
+.other {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem; 
+}
+
+.other .card-subtitle {
+    font-size: smaller;
+    line-height: 26px;
+}
+
+.other .card-text {
+    font-size: medium;
+}
+
+.other .card-body a {
+    font-size: small;
+}
+
+.blog a.more {
+    color: var(--bs-warning);
+    border-bottom: 1px solid var(--bs-warning);
+    max-width: fit-content;
+    padding: 1rem 3px;
+    margin: 1rem auto;
+    font-weight: bold;
+    transition: all 0.7s;
+}
+
+.blog a.more:hover {
+    background-color: var(--bs-warning);
+    color: black;
+    border-radius: 3px;
+}
